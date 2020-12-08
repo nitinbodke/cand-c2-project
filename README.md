@@ -37,10 +37,20 @@ aws lambda list-functions
     "Functions": []
 }
 
-terraform apply
-# failed with 400 error
-# debug
-export TF_LOG=DEBUG
-terraform apply
-# debugged and fixed error
-terraform destroy
+
+Outcome:
+1. Task 1: Task1
+2. Task 2: Task2
+3. Task 3: Task3
+4. Task 4: Task4
+5. Task 5: Task5
+6. Task 6: Task6
+
+Notes:
+1. 3 Tier Arch:
+   https://lucid.app/lucidchart/invitations/accept/fc0a2985-8533-495d-9332-c98c9d7d937d
+   Serverless Arch:
+   https://lucid.app/lucidchart/invitations/accept/467cbd45-084c-4341-92b7-d1b74e253240
+2. In "Task 2", Each estimate CSV has respective .txt having explanation
+3. Exercise 2: UdacityM4 deleted by commenting out that code.
+4. Task 6: To avoid charges already deleted instances, hence attached deletion of lambda stack.

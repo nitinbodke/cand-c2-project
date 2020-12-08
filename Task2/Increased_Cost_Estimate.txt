@@ -1,10 +1,14 @@
-Durability:
+Operational Excellence:
+1. AWS CloudWatch
+2. AWS CloudTrail
+
+Reliability:
 1. MySQL:
     1. Increased DB backup to increase
     2. Read replica in another region to take care of region failure.
 2. S3 Cross region replication to handle region failure.
 
-Performance:
+Performance Efficiency:
 1. Amazon S3 Transfer Acceleration to improve upload performance
 2. Add Memcache instance to reduce load on DB tier
 3. RDS:
@@ -12,9 +16,28 @@ Performance:
 
 Security:
 Enhance security by adding following services.
-1. WAF
+1. WAF              Added
 2. Security Hub
 3. AWS Inspector
 4. AWS Config
 5. AWS GaurdDuty
 6. AWS Systems Manager
+
+Cost Optimization:
+1. Implement measures in Reduced cost estimate to improve costs optimization.
+
+Improved functional value to drive growth:
+1. Amazon SNS:
+    1. User for notifications for increased engagement
+    2. Ref: https://www.amazon.in/dp/B00NW01MKM/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+2. AmazonDynamo DB:
+    1. User profile
+    2. User preferences
+3. Amazon Cognito:
+    1. Simple and Secure User Sign-Up, Sign-In
+    2. Access Control
+4. Amazon Comprehend
+    1. Analyze posts to increase user engagement
+
+Estimate:
+https://calculator.aws/#/estimate?id=c72d44a8db320d0fc9bec37dae9ed25bc9f69d5b

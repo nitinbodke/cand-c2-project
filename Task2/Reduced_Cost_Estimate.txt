@@ -1,3 +1,4 @@
+Cost Optimization:
 1. Enable Amazon CloudFront Origin Shield
 2. Go for small EC2 instances and increasing the number of instances, so that when load is less, less resources are utilized.
 3. Increase lease to 3 years with partial payment for following components:

@@ -1,0 +1,39 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),example.com,Amazon Route 53,0,130.5,1566.00,USD,Hosted Zones (1)
+My Estimate,US East (N. Virginia),Web Load Balancer,Elastic Load Balancing,0,136.43,1637.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),App Instances,Amazon EC2,0,822.700322,9872.40,USD,"Operating system (Linux), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (50 GB), Snapshot Frequency (Daily), Amount changed per snapshot (3 GB), DT Inbound: Not selected (0 TB per month) 
+, DT Outbound: Internet (4500 GB per month) 
+, DT Intra-Region: (0 GB per month) 
+, Workload (Daily, (Workload days: Monday, Tuesday, Wednesday, Thursday, Friday, Baseline: 2, Peak: 4, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (m6g.2xlarge), Pricing strategy (EC2 Instance Savings Plans 1yr No Upfront)"
+My Estimate,US East (N. Virginia),Web Instances,Amazon EC2,0,1797.1659799999998,21565.99,USD,"Operating system (Linux), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (50 GB), Snapshot Frequency (Daily), Amount changed per snapshot (3 GB), DT Inbound: Not selected (0 TB per month) 
+, DT Outbound: Internet (15000 GB per month) 
+, DT Intra-Region: (0 GB per month) 
+, Workload (Daily, (Workload days: Monday, Tuesday, Wednesday, Thursday, Friday, Baseline: 2, Peak: 6, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (t4g.2xlarge), Pricing strategy (EC2 Instance Savings Plans 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS,Amazon Aurora MySQL-Compatible,0,2231.79,26781.48,USD,"Change records per statement (0.38), Nodes (2), Instance Type (db.r4.4xlarge), Instance Family (Memory optimized), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Storage amount (51 GB), Additional backup storage (51 GB)"
+My Estimate,US East (N. Virginia),VPC,Amazon Virtual Private Cloud (VPC),0,707.85,8494.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),User Content,S3 Intelligent - Tiering,0,2385.75,28629.00,USD,S3 INT storage (150000 GB per month)
+My Estimate,US East (N. Virginia),User Content,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month) 
+, DT Outbound: Not selected (0 TB per month) 
+"
+My Estimate,US East (N. Virginia),App Load Balancer,Elastic Load Balancing,0,46.43,557.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),RDS Cache,Amazon ElastiCache,0,819.06,9828.72,USD,( 4 instances of type Redis  Memory optimized  cache r6g.2xlarge  Reserved  No Upfront  1yr )
+My Estimate,US East (N. Virginia),Web Servers Protection,AWS Web Application Firewall (WAF),0,670,8040.00,USD,"Number of Web Access Control Lists (Web ACLs) utilized (100 per month), Number of Rules added per Web ACL (5 per month), Number of Rule Groups per Web ACL (10 per month), Number of Rules inside each Rule Group (10 per month), Number of Managed Rule Groups (10 per month)"
+My Estimate,US East (N. Virginia),Managed EC2,AWS AppConfig,0,97.35,1168.20,USD,"Targets (20), Frequency of GetConfiguration API requests (20 per day), Frequency of configurations received (20 per day), Application configurations (10)"
+My Estimate,US East (N. Virginia),Managed EC2,Parameter Store,0,0,0.00,USD,"Standard parameters (20), Frequency of API interactions per parameter (300 per month)"
+My Estimate,US East (N. Virginia),Managed EC2,Automation,0,0,0.00,USD,"Average size of playbook attachments (100 MB), Frequency of steps (100 per day), aws:executeScript steps (30)"
+My Estimate,US East (N. Virginia),Monitoring,AWS CloudTrail,0,405,4860.00,USD,"Management events units (millions), Write management trails (1), Read management trails (1), Data events units (millions), S3 trails (1), Lambda trails (1), Insight events units (millions), Trails with Insight events (1), Write management events (600 per month), Read management events (600 per month), S3 operations (90 per month), Number of write management events analyzed (90 per month)"
+My Estimate,US East (N. Virginia),User notifications,Amazon Simple Notification Service (SNS),0,1650.11,19801.32,USD,"DT Inbound: Not selected (0 TB per month) 
+, DT Outbound: Internet (15000 GB per month) 
+, Requests (15 million per month)"
+My Estimate,US East (N. Virginia),User profile and Preferences,DynamoDB on-demand capacity,0,149.38,1792.56,USD,"Average item size (all attributes) (1 KB), Data storage size (500 GB)"
+My Estimate,US East (N. Virginia),User profile and Preferences,DynamoDB provisioned capacity,180,151.14,1993.68,USD,"Average item size (all attributes) (1 KB), Write reserved capacity term (1 year), Read reserved capacity term (1 year), Data storage size (500 GB)"
+My Estimate,US East (N. Virginia),User profile and Preferences,DynamoDB Accelerator (DAX) clusters,0,744.6,8935.20,USD,DAX nodes ( 4 instances of type r5.large )
+My Estimate,US East (N. Virginia),User profile and Preferences,DynamoDB Backup and restore,0,225,2700.00,USD,"On-demand backup data storage (500 GB), Point-In-Time Recovery (PITR) data storage (500 GB), Table data restored (500 GB)"
+My Estimate,US East (N. Virginia),Drive insights from User posts to increase engagement,PII Detection,0,2375,28500.00,USD,"Number of documents asynchronous (15000000), Average characters in a document asynchronous (250)"
+My Estimate,US East (N. Virginia),Drive insights from User posts to increase engagement,Language Detection,0,2375,28500.00,USD,"Number of documents asynchronous (15000000), Average characters in a document asynchronous (250)"
+My Estimate,US East (N. Virginia),Put log Monitoring and alerting,Amazon CloudWatch,0,211.45,2537.40,USD,
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
