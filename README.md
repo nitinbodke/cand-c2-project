@@ -54,6 +54,6 @@ Notes:
 2. In "Task 2", Each estimate CSV has respective .txt having explanation
 3. Exercise 2: UdacityM4 deleted by commenting out that code.
 4. Task 3: 
-    1. Facing issue with CloudTrail user. Able to perform same action from Admin account.
-    2. Reported at: https://knowledge.udacity.com/questions/399056?utm_campaign=ret_600_auto_ndxxx_knowledge-comment-created_na&utm_source=blueshift&utm_medium=email&utm_content=ret_600_auto_ndxxx_knowledge-comment-created_na&bsft_clkid=1238a21a-56f0-4f98-bd45-9f1726c8077e&bsft_uid=73b14e77-af08-4513-87ed-e3ec70e8437a&bsft_mid=0a0fb974-1f71-4289-92f0-aac2d2c991df&bsft_eid=64e4ccff-21b0-44a8-abc6-a9081789abfc&bsft_txnid=e8ec19c9-e9fe-45c2-ad2f-8445cec25cec&bsft_mime_type=html&bsft_ek=2020-12-05T07%3A08%3A32Z&bsft_aaid=8d7e276e-4a10-41b2-8868-423fe96dd6b2&bsft_lx=1&bsft_tv=1#399085
+    1. Faced issue with CloudTrail user. Able to perform same action from Admin account.
+    2. Fixed issue and updated solution at https://knowledge.udacity.com/questions/399056?utm_campaign=ret_600_auto_ndxxx_knowledge-comment-created_na&utm_source=blueshift&utm_medium=email&utm_content=ret_600_auto_ndxxx_knowledge-comment-created_na&bsft_clkid=1238a21a-56f0-4f98-bd45-9f1726c8077e&bsft_uid=73b14e77-af08-4513-87ed-e3ec70e8437a&bsft_mid=0a0fb974-1f71-4289-92f0-aac2d2c991df&bsft_eid=64e4ccff-21b0-44a8-abc6-a9081789abfc&bsft_txnid=e8ec19c9-e9fe-45c2-ad2f-8445cec25cec&bsft_mime_type=html&bsft_ek=2020-12-05T07%3A08%3A32Z&bsft_aaid=8d7e276e-4a10-41b2-8868-423fe96dd6b2&bsft_lx=1&bsft_tv=1#399085
 5. Task 6: To avoid charges already deleted instances, hence attached deletion of lambda stack.
