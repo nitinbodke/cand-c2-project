@@ -1,0 +1,141 @@
+Facts:
+1. 50000 users/month
+
+Note:
+Given requirement is too abstract. Hence making following assumptions.
+In addition, I do feel AWS Pricing Calculator
+
+
+Assumptions:
+1. Website requests are simple CURD operations
+2. All requests are indexed, hence do not wait on DB.
+3. 50k single region users, i.e. max active users can be 50k
+4. But actual active users will be far less: Lets assume this number is 5k
+5. User upload to website: 10MB per day/per user
+6. User active session: 30 minutes per day/per user
+7. User download: 100 MB per day/per user
+8. 50 DNS queries per day/per user
+9. Web EC2 processed bytes: 10 MB per day/per user
+9. App EC2 processed bytes: 3 MB per day/per user
+10. Number of EC2 requests: 60 per day/per user
+11. DB size per user:
+Fixed: 10Kb per user
+Dynamic: 2kb per day/per user
+
+AWS Calculator:
+Route53:
+Hosted Zone: example.com
+Record sets:
+api.example.com     a simple <elb>
+static.example.com  a simple <cloudfront.domain>
+How many dns queries per month?
+Ref:
+https://serverfault.com/questions/91562/dns-management-how-to-predict-required-of-queries-per-month
+50 DNS queries Per user/Per day = 75000000/month DNS queries
+
+
+S3:
+S3 bucket for static media:
+2MB
+Standard
+Cost: Negligible
+
+S3 bucket for user content:
+Upload: 10MB per day/per user = 15000 GB
+Download: 100MB per day/per user = 150000 GB
+PUT, COPY, POST, LIST requests to S3 INT: 7500000
+GET, SELECT, and all other requests from S3 INT: 1875000
+Monthly cost: 2,385.75 USD
+
+
+Web Load Balancer:
+Processed bytes (EC2 Instances and IP addresses as targets): 10*50000*30 i.e. 15000 GB/month
+Average number of new connections per ALB: 50000/ (24*60) i.e. ~35 connections / minutes
+Average connection duration: 30 min
+Average number of requests per second per ALB: 35
+
+
+Web EC2: (Max 3/az)
+Daily spike pattern:    Mon, Tue, Wed, Thu, Fri
+Baseline: 2
+Peak: 6
+Duration of Peak: 8 hr 30 min
+Storage for each EC2 instance: SSD (GP2)
+Storage amount: 50GB
+Snapshot Frequency: Daily
+Amount changed per snapshot: 3
+Outbound Data Transfer: 15000 GB/month
+t4g.2xlarge 	$0.268800 hourly    $0.168600 hourly: Final
+
+
+App Load Balancer: (1/4 of web)
+Processed bytes (EC2 Instances and IP addresses as targets): 10*50000*30 i.e. 3750 GB/month
+Average number of new connections per ALB: 9 connections / minutes
+Average connection duration: 30 min
+Average number of requests per second per ALB: 9
+
+
+
+App EC2: (Max 2/az)
+Daily spike pattern:    Mon, Tue, Wed, Thu, Fri
+Baseline: 2
+Peak: 4
+Duration of Peak: 8 hr 30 min
+Storage for each EC2 instance: SSD (GP2)
+Storage amount: 50GB
+Snapshot Frequency: Daily
+Amount changed per snapshot: 3
+Outbound Data Transfer: 4500 GB/month
+m6g.2xlarge	32 GiB	8
+
+
+RDS:
+Amazon Aurora MySQL-Compatible:
+Static Data: 15GB month
+DB Increase: 3GB increase / month
+Provision for 12 months: 15 + 36 = 51GB
+Number of reads per second: 30
+50 reads per day/per user
+Per month: 75000000 / (30*24*60*60)
+Number of writes per second: 10
+10 writes per day/per user
+Per month: 15000000
+Monthly: 1,129.49 USD
+
+Amazon RDS for MySQL:
+Multi-Az: Yes
+Instance type: db.m6g.8xlarge
+Storage: 51GB
+Backup Storage: 51GB
+Monthly: 1,153.40 USD
+
+
+Nat Gateway:
+Number of NAT Gateways: 1
+Number of NAT Gateways: 15000 GB/Month
+
+
+CloudFront:
+https://www.cdnperf.com/tools/cdn-calculator
+User download: 15000 GB/month
+HTTPS requests: 75000000 month
+Bandwidth spread by continents:
+USA(North America): 40%
+Europe: 30%
+Australia, New Zealand: 10%
+Asia: 10%
+South America: 5%
+Africa: 5%
+Monthly cost: $1,551.875
+
+
+Total cost: AWS Estimate + CDN
+With Aurora:
+https://calculator.aws/#/estimate?id=ba53a0abcf46ab256db4f6272edf66b3e8982d40
+7,115.41 + 1,551.875 = 8708.195
+
+With MySQL:
+https://calculator.aws/#/estimate?id=505ad5b60881b8f03695f51502912cc7fd3b76bb
+7,180.23 + 1,551.875 = 8732.105
+
+I will take https://calculator.aws/#/estimate?id=ba53a0abcf46ab256db4f6272edf66b3e8982d40 forward for next estimates.

@@ -1,7 +1,24 @@
-# TODO: Designate a cloud provider, region, and credentials
+provider "aws" {
+  profile = "sa"
+  region  = "us-east-1"
+}
 
-
-# TODO: provision 4 AWS t2.micro EC2 instances named Udacity T2
-
-
-# TODO: provision 2 m4.large EC2 instances named Udacity M4
+resource "aws_instance" "UdacityT2" {
+  ami           = "ami-04d29b6f966df1537"
+  instance_type = "t2.micro"
+  subnet_id     = "subnet-083a9aa6ff2481ec8"
+  count         = 4
+  tags = {
+    Name = "Udacity T2"
+  }
+}
+//
+//resource "aws_instance" "UdacityM4" {
+//  ami           = "ami-04d29b6f966df1537"
+//  instance_type = "m4.large"
+//  subnet_id     = "subnet-083a9aa6ff2481ec8"
+//  count         = 2
+//  tags = {
+//    Name = "Udacity M4"
+//  }
+//}

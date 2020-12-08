@@ -29,3 +29,18 @@
   
 2. Take a screenshot of the EC2 instances page
 3. Take a screenshot of the VPC page 
+
+terraform init
+terraform plan
+aws lambda list-functions
+{
+    "Functions": []
+}
+
+terraform apply
+# failed with 400 error
+# debug
+export TF_LOG=DEBUG
+terraform apply
+# debugged and fixed error
+terraform destroy

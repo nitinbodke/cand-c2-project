@@ -1,0 +1,20 @@
+Durability:
+1. MySQL:
+    1. Increased DB backup to increase
+    2. Read replica in another region to take care of region failure.
+2. S3 Cross region replication to handle region failure.
+
+Performance:
+1. Amazon S3 Transfer Acceleration to improve upload performance
+2. Add Memcache instance to reduce load on DB tier
+3. RDS:
+    1. Add Reader node
+
+Security:
+Enhance security by adding following services.
+1. WAF
+2. Security Hub
+3. AWS Inspector
+4. AWS Config
+5. AWS GaurdDuty
+6. AWS Systems Manager

@@ -1,0 +1,8 @@
+1. Enable Amazon CloudFront Origin Shield
+2. Go for small EC2 instances and increasing the number of instances, so that when load is less, less resources are utilized.
+3. Increase lease to 3 years with partial payment for following components:
+    1. Web EC2 instances
+    2. App EC2 instances
+    3. Aurora
+
+https://calculator.aws/#/estimate?id=a76ceccd40e7b903554dd70d3bfb88831db934c9
