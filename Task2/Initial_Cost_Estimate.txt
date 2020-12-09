@@ -135,7 +135,7 @@ https://calculator.aws/#/estimate?id=ba53a0abcf46ab256db4f6272edf66b3e8982d40
 7,115.41 + 1,551.875 = 8708.195
 
 With MySQL:
-https://calculator.aws/#/estimate?id=505ad5b60881b8f03695f51502912cc7fd3b76bb
-7,180.23 + 1,551.875 = 8732.105
+https://calculator.aws/#/estimate?id=70d1df484dd110d8dc8f7009b0ca0879cfdb7023
+8,333.63 USD
 
-I will take https://calculator.aws/#/estimate?id=ba53a0abcf46ab256db4f6272edf66b3e8982d40 forward for next estimates.
+As per inputs from reviewer, only considering MySQL for next estimations.

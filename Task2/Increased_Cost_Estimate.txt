@@ -40,4 +40,4 @@ Improved functional value to drive growth:
     1. Analyze posts to increase user engagement
 
 Estimate:
-https://calculator.aws/#/estimate?id=c72d44a8db320d0fc9bec37dae9ed25bc9f69d5b
+https://calculator.aws/#/estimate?id=5e1f8784326d9ae5ed9bb7abc4b03a2b48051df3

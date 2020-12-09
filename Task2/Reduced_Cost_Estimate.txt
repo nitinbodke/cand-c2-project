@@ -6,4 +6,4 @@ Cost Optimization:
     2. App EC2 instances
     3. Aurora
 
-https://calculator.aws/#/estimate?id=a76ceccd40e7b903554dd70d3bfb88831db934c9
+https://calculator.aws/#/estimate?id=5d1cffd5a9a91454dff5904ccc69c228bc623512

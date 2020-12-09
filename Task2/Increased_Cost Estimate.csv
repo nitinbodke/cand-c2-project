@@ -9,14 +9,13 @@ My Estimate,US East (N. Virginia),Web Instances,Amazon EC2,0,1797.1659799999998,
 , DT Outbound: Internet (15000 GB per month) 
 , DT Intra-Region: (0 GB per month) 
 , Workload (Daily, (Workload days: Monday, Tuesday, Wednesday, Thursday, Friday, Baseline: 2, Peak: 6, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (t4g.2xlarge), Pricing strategy (EC2 Instance Savings Plans 1yr No Upfront)"
-My Estimate,US East (N. Virginia),RDS,Amazon Aurora MySQL-Compatible,0,2231.79,26781.48,USD,"Change records per statement (0.38), Nodes (2), Instance Type (db.r4.4xlarge), Instance Family (Memory optimized), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Storage amount (51 GB), Additional backup storage (51 GB)"
 My Estimate,US East (N. Virginia),VPC,Amazon Virtual Private Cloud (VPC),0,707.85,8494.20,USD,Number of NAT Gateways (1)
 My Estimate,US East (N. Virginia),User Content,S3 Intelligent - Tiering,0,2385.75,28629.00,USD,S3 INT storage (150000 GB per month)
 My Estimate,US East (N. Virginia),User Content,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month) 
 , DT Outbound: Not selected (0 TB per month) 
 "
 My Estimate,US East (N. Virginia),App Load Balancer,Elastic Load Balancing,0,46.43,557.16,USD,Number of Application Load Balancers (1)
-My Estimate,US East (N. Virginia),RDS Cache,Amazon ElastiCache,0,819.06,9828.72,USD,( 4 instances of type Redis  Memory optimized  cache r6g.2xlarge  Reserved  No Upfront  1yr )
+My Estimate,US East (N. Virginia),RDS Cache,Amazon ElastiCache,0,1638.12,19657.44,USD,( 4 instances of type Redis  Memory optimized  cache r6g.2xlarge  Reserved  No Upfront  1yr )
 My Estimate,US East (N. Virginia),Web Servers Protection,AWS Web Application Firewall (WAF),0,670,8040.00,USD,"Number of Web Access Control Lists (Web ACLs) utilized (100 per month), Number of Rules added per Web ACL (5 per month), Number of Rule Groups per Web ACL (10 per month), Number of Rules inside each Rule Group (10 per month), Number of Managed Rule Groups (10 per month)"
 My Estimate,US East (N. Virginia),Managed EC2,AWS AppConfig,0,97.35,1168.20,USD,"Targets (20), Frequency of GetConfiguration API requests (20 per day), Frequency of configurations received (20 per day), Application configurations (10)"
 My Estimate,US East (N. Virginia),Managed EC2,Parameter Store,0,0,0.00,USD,"Standard parameters (20), Frequency of API interactions per parameter (300 per month)"
@@ -32,6 +31,9 @@ My Estimate,US East (N. Virginia),User profile and Preferences,DynamoDB Backup a
 My Estimate,US East (N. Virginia),Drive insights from User posts to increase engagement,PII Detection,0,2375,28500.00,USD,"Number of documents asynchronous (15000000), Average characters in a document asynchronous (250)"
 My Estimate,US East (N. Virginia),Drive insights from User posts to increase engagement,Language Detection,0,2375,28500.00,USD,"Number of documents asynchronous (15000000), Average characters in a document asynchronous (250)"
 My Estimate,US East (N. Virginia),Put log Monitoring and alerting,Amazon CloudWatch,0,211.45,2537.40,USD,
+My Estimate,US East (N. Virginia),Mater RDS,Amazon RDS for MySQL,6501,558.3810000000001,13201.57,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year Partial Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (51 GB), Instance type (db.m6g.4xlarge), Additional backup storage (51 GB)"
+My Estimate,US East (N. Virginia),Replica RDS,Amazon RDS for MySQL,6501,558.3810000000001,13201.57,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year Partial Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (51 GB), Instance type (db.m6g.4xlarge), Additional backup storage (51 GB)"
+My Estimate,US East (Ohio),Cross Region Replica for DR,Amazon RDS for MySQL,6501,558.3810000000001,13201.57,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year Partial Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (51 GB), Instance type (db.m6g.4xlarge), Additional backup storage (51 GB)"
 
 
 

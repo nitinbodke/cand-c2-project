@@ -9,13 +9,14 @@ My Estimate,US East (N. Virginia),Web Instances,Amazon EC2,704.304,1549.043987,1
 , DT Outbound: Internet (15000 GB per month) 
 , DT Intra-Region: (0 GB per month) 
 , Workload (Daily, (Workload days: Monday, Tuesday, Wednesday, Thursday, Friday, Baseline: 4, Peak: 24, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (t4g.medium), Pricing strategy (EC2 Instance Savings Plans 3yr Partial Upfront)"
-My Estimate,US East (N. Virginia),RDS,Amazon Aurora MySQL-Compatible,10000,377.59,14531.08,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r4.4xlarge), Instance Family (Memory optimized), Pricing Model (Reserved), Lease Offering Term (3yr), Purchase Option (Partial Upfront), Storage amount (51 GB), Additional backup storage (51 GB)"
 My Estimate,US East (N. Virginia),VPC,Amazon Virtual Private Cloud (VPC),0,707.85,8494.20,USD,Number of NAT Gateways (1)
 My Estimate,US East (N. Virginia),User Content,S3 Intelligent - Tiering,0,2385.75,28629.00,USD,S3 INT storage (150000 GB per month)
 My Estimate,US East (N. Virginia),User Content,Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month) 
 , DT Outbound: Not selected (0 TB per month) 
 "
 My Estimate,US East (N. Virginia),App Load Balancer,Elastic Load Balancing,0,46.43,557.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Master RDS,Amazon RDS for MySQL,13109,380.699,17677.39,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 3 Year Partial Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (51 GB), Instance type (db.m6g.4xlarge), Additional backup storage (51 GB)"
+My Estimate,US East (N. Virginia),Replica RDS,Amazon RDS for MySQL,13109,380.699,17677.39,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 3 Year Partial Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (51 GB), Instance type (db.m6g.4xlarge), Additional backup storage (51 GB)"
 
 
 
