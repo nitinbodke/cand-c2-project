@@ -57,3 +57,15 @@ Notes:
     1. Faced issue with CloudTrail user. Able to perform same action from Admin account.
     2. Fixed issue and updated solution at https://knowledge.udacity.com/questions/399056?utm_campaign=ret_600_auto_ndxxx_knowledge-comment-created_na&utm_source=blueshift&utm_medium=email&utm_content=ret_600_auto_ndxxx_knowledge-comment-created_na&bsft_clkid=1238a21a-56f0-4f98-bd45-9f1726c8077e&bsft_uid=73b14e77-af08-4513-87ed-e3ec70e8437a&bsft_mid=0a0fb974-1f71-4289-92f0-aac2d2c991df&bsft_eid=64e4ccff-21b0-44a8-abc6-a9081789abfc&bsft_txnid=e8ec19c9-e9fe-45c2-ad2f-8445cec25cec&bsft_mime_type=html&bsft_ek=2020-12-05T07%3A08%3A32Z&bsft_aaid=8d7e276e-4a10-41b2-8868-423fe96dd6b2&bsft_lx=1&bsft_tv=1#399085
 5. Task 6: To avoid charges already deleted instances, hence attached deletion of lambda stack.
+
+Review comments:
+1. Modify your estimates to include cost for elastic IP.
+Nitin: An Elastic IP address doesn’t incur charges as long as all the following conditions are true:
+1. The Elastic IP address is associated with an EC2 instance.
+2. The instance associated with the Elastic IP address is running.
+3. The instance has only one Elastic IP address attached to it.
+4. The Elastic IP address is associated with an attached network interface, such as a Network Load Balancer or NAT gateway.
+Ref: https://aws.amazon.com/premiumsupport/knowledge-center/elastic-ip-charges/
+
+2. Your logs only show that you were logged in as "CloudTrail" User. I can not confirm from your logs if you were also able to login using "Accountant" user or not.
+Nitin: Added Task3/UdacityCloudTrailLogAccountant.csv
